@@ -1,62 +1,51 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-html,
 body {
-  display: grid;
-  height: 100%;
-  width: 100%;
-  place-items: center;
-  background: linear-gradient(315deg, #ffffff 0%, #d7e1ec 74%);
+  font-family: "Space Mono", monospace;
+  font-size: 18px;
 }
-a {
-  text-decoration: none;
+
+nav,
+ul {
+  list-style-type: none;
 }
-.wrapper .button {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  float: left;
-  margin: 0 5px;
-  overflow: hidden;
-  background: #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease-out;
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  font-style: normal;
 }
-.wrapper .button .icon {
-  display: inline-block;
-  height: 60px;
-  width: 60px;
-  text-align: center;
-  border-radius: 50px;
-  box-sizing: border-box;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
+
+.container {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+  overflow-wrap: break-word;
+  text-align: start;
+  position: relative;
+  margin: 43px 0px 10px calc((100% - 980px) * 0.5);
+  left: 36px;
+  height: auto;
 }
-.wrapper .button:hover .icon {
-  background: #1da1f2;
+
+@media (prefers-color-scheme: light) {
+  body {
+    background: #FFF;
+    color: #6A6A6A;
+  }
+
+  a {
+    color: #0969da;
+  }
 }
-.wrapper .button span {
-  color: #1da1f2;
-}
-.wrapper .button .icon i {
-  font-size: 25px;
-  line-height: 60px;
-  transition: all 0.3s ease-out;
-}
-.wrapper .button:hover .icon i {
-  color: #fff;
-}
-.wrapper .button span {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 60px;
-  margin-left: 10px;
-  transition: all 0.3s ease-out;
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #303030;
+    color: #B3B3B3;
+  }
+
+  a {
+    color: #2F81F7;
+  }
 }

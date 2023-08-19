@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8" />
     <title>Boris Evstratov</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-    />
+    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
   </head>
+
   <body>
-    <div class="wrapper">
-      <a href="https://vk.com/borisevstratov" target="_blank" class="button">
-        <div class="icon"><i class="fab fa-vk"></i></div>
-        <span>VK.com</span>
-      </a>
-      <a href="https://www.facebook.com/evstratov.b" target="_blank" class="button">
-        <div class="icon"><i class="fab fa-facebook-f"></i></div>
-        <span>Facebook</span>
-      </a>
-      <a href="https://www.instagram.com/borisevstratov" target="_blank"  class="button">
-        <div class="icon"><i class="fab fa-instagram"></i></div>
-        <span>Instagram</span>
-      </a>
-      <a href="https://www.linkedin.com/in/boris-evstratov/" target="_blank"  class="button">
-        <div class="icon"><i class="fab fa-linkedin"></i></div>
-        <span>Linkedin</span>
-      </a>
-      <a href="https://github.com/borisevstratov" target="_blank"  class="button">
-        <div class="icon"><i class="fab fa-github"></i></div>
-        <span>GitHub</span>
-      </a>
+    <div class="container">
+      <h1><i>Boris Evstratov</i></h1>
+      <ul>
+        <li>
+          <a href="https://www.instagram.com/borisevstratov/" target="_blank" rel="noopener noreferrer">instagram</a>
+        </li>
+        <li>
+          <a href="https://www.facebook.com/evstratov.b/" target="_blank" rel="noopener noreferrer">facebook</a>
+        </li>
+        <li>
+          <a id="onlyfans-link" href="#" target="_blank" rel="noopener noreferrer">onlyfans</a>
+          <span id="onlyfans-placeholder"></span>
+        </li>
+        <li>this space is free for a new social media</li>
+        <li>this space is free for a new social media</li>
+        <li>this space is free for a new social media</li>
+      </ul>
+      <p>Email me: <a href="mailto:borisevstratov@gmail.com">borisevstratov@gmail.com</a></p>
+      <hr>
+      <div id="time"></div>
     </div>
   </body>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const now = new Date();
+      const el = document.getElementById("time");
+      el.innerHTML = now.toLocaleString();
+    });
+
+    document.getElementById("onlyfans-link").addEventListener("click", function (event) {
+      event.preventDefault();
+      const el = document.getElementById("onlyfans-placeholder");
+      el.innerHTML = "Are you fr? 😎";
+    });
+  </script>
+
 </html>
