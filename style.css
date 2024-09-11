@@ -1,46 +1,58 @@
 body {
-  font-family: monospace;
+	font-family: monospace;
+	padding: 5px;
 }
 
 nav,
 ul {
-  list-style-type: none;
+	list-style-type: none;
+	padding-inline-start: 15px;
+}
+
+nav li,
+ul li {
+	margin-bottom: 10px;
 }
 
 @media (prefers-color-scheme: light) {
-  body {
-    background: #FFF;
-    color: #444444;
-  }
+	body {
+		background: #FFF;
+		color: #444444;
+	}
 
-  a {
-    color: #0969da;
-  }
+	a {
+		color: #0969da;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
-  body {
-    background: #303030;
-    color: #B3B3B3;
-  }
+	body {
+		background: #303030;
+		color: #B3B3B3;
+	}
 
-  a {
-    color: #2F81F7;
-  }
+	a {
+		color: #2F81F7;
+	}
 }
 
 #time {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 12px;
-  color: #999;
-  margin: 10px;
-  padding: 10px;
-  background-color: #f0f0f0;
-  border: 1px solid #e0e0e0;
-  border-radius: 5px;
-  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
+	margin: 10px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border: 1px solid #e0e0e0;
+	border-radius: 5px;
+	/* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+.dashed-underline {
+	text-decoration: underline dotted;
+	cursor: pointer;
 }
