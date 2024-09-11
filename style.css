@@ -1,6 +1,5 @@
 body {
-  font-family: "Space Mono", monospace;
-  font-size: 18px;
+  font-family: monospace;
 }
 
 nav,
@@ -8,30 +7,10 @@ ul {
   list-style-type: none;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: normal;
-  font-style: normal;
-}
-
-.container {
-  border: 0;
-  outline: 0;
-  padding: 0;
-  vertical-align: baseline;
-  overflow-wrap: break-word;
-  text-align: start;
-  position: relative;
-  margin: 43px 0px 10px calc((100% - 980px) * 0.5);
-  left: 36px;
-  height: auto;
-}
-
 @media (prefers-color-scheme: light) {
   body {
     background: #FFF;
-    color: #6A6A6A;
+    color: #444444;
   }
 
   a {
@@ -48,4 +27,20 @@ h3 {
   a {
     color: #2F81F7;
   }
+}
+
+#time {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); */
 }

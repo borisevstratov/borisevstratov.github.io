@@ -5,12 +5,20 @@
     <meta charset="utf-8" />
     <title>Boris Evstratov</title>
     <link rel="stylesheet" href="style.css" />
-    <link href='https://fonts.googleapis.com/css?family=Space Mono' rel='stylesheet'>
   </head>
 
   <body>
     <div class="container">
-      <h1><i>Boris Evstratov</i></h1>
+      <p>
+        borisevstratov's page on the internet
+      </p>
+      <p>
+        check out <a href="https://airtasks.com/go" target="_blank" rel="noopener noreferrer">my startup</a>
+        and the <a href="https://airtasks.com" target="_blank" rel="noopener noreferrer">other one</a>
+      </p>
+
+      <br />
+      <p>my social media:</p>
       <ul>
         <li>
           <a href="https://www.instagram.com/borisevstratov/" target="_blank" rel="noopener noreferrer">instagram</a>
@@ -26,17 +34,23 @@
         <li>this space is free for a new social media</li>
         <li>this space is free for a new social media</li>
       </ul>
-      <p>Email me: <a href="mailto:borisevstratov@gmail.com">borisevstratov@gmail.com</a></p>
-      <hr>
-      <div id="time"></div>
+
+      <p>email me: <a href="mailto:borisevstratov@gmail.com">borisevstratov@gmail.com</a></p>
+
+      <div id="time">
+        <span id="time"></span>
+      </div>
     </div>
   </body>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
-      const now = new Date();
       const el = document.getElementById("time");
-      el.innerHTML = now.toLocaleString();
+      el.innerHTML = new Date().toLocaleString();
+
+      setInterval(function () {
+        el.innerHTML = new Date().toLocaleString();
+      }, 1000);
     });
 
     document.getElementById("onlyfans-link").addEventListener("click", function (event) {
