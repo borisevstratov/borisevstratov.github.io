@@ -1,8 +1,9 @@
+<!DOCTYPE html>
 <html lang="en">
 
 	<head>
 		<meta charset="utf-8" />
-		<title>borisevstratov</title>
+		<title>bevstratov | money</title>
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
@@ -19,13 +20,13 @@
 				</li>
 				<li>
 					BTC (click the address to copy):
-					<span class="dashed-underline" onclick="copyText(this.textContent)">
+					<span class="dashed-underline" onclick="copyText(this.textContent, 'BTC address')">
 						1Aoena95uqx7Pb6a9H4e6yDgPVADLuk4kQ
 					</span>
 				</li>
 				<li>
 					TON (click the address to copy):
-					<span class="dashed-underline" onclick="copyText(this.textContent)">
+					<span class="dashed-underline" onclick="copyText(this.textContent, 'TON address')">
 						UQDdTdeV3xvAfbaubFir14zdTVtN5QYhwWSi83zDpgxCIGhd
 					</span>
 				</li>
@@ -52,9 +53,9 @@
 
 	<script src="script.js"></script>
 	<script>
-		function copyText(text) {
+		function copyText(text, message = "") {
 			navigator.clipboard.writeText(text);
-			alert('👍 copied to clipboard');
+			alert(message + ' copied to clipboard 👍');
 		}
 	</script>
 
