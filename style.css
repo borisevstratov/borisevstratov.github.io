@@ -69,3 +69,7 @@ ul li {
 	padding-top: 160px;
 	padding-bottom: 40px;
 }
+
+.huge-text {
+	font-size: 5rem;
+}
