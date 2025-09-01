@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>bevstratov | cv</title>
+		<link rel="stylesheet" href="style.css" />
+		<style>
+			h1 {
+				font-size: 28px;
+				margin-bottom: 0.25em;
+				border-bottom: none;
+			}
+
+			h2 {
+				font-size: 20px;
+				font-weight: bold;
+				margin-top: 2em;
+				margin-bottom: 1em;
+				border-bottom: 1px solid #ddd;
+				padding-bottom: 0.3em;
+			}
+
+
+
+			.entry {
+				margin-bottom: 1em;
+				padding-bottom: 1em;
+			}
+
+			.entry h3 {
+				margin: 0;
+				font-size: 18px;
+				font-weight: bold;
+				color: #111;
+			}
+
+			.entry h4 {
+				margin-block-end: 0.5em;
+				margin-block-start: 0.5em;
+			}
+
+			.entry .meta {
+				font-size: 14px;
+				color: #555;
+				margin: 0.25em 0 0.5em;
+			}
+
+			.entry p {
+				margin: 0.5em 0 0.5em;
+			}
+
+			ul {
+				margin: 0.5em 0 0.8em 1.2em;
+				padding: 0;
+				list-style-type: none;
+			}
+
+			ul li {
+				margin-bottom: 0.3em;
+				padding-left: 1em;
+			}
+
+			ul li::before {
+				content: '\2013';
+				position: absolute;
+				margin-left: -1em;
+			}
+
+			/* Print-specific styles */
+			@media print {
+				body * {
+					visibility: hidden;
+				}
+
+				a.spaced-before,
+				#time {
+					visibility: hidden;
+				}
+
+				.container,
+				.container * {
+					visibility: visible;
+				}
+
+				.container {
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 100%;
+					margin: 1cm;
+					padding: 0;
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+
+			<h1 class="name">Boris Evstratov</h1>
+			<p class="contact">
+				<a href="mailto:borisevstratov@gmail.com">borisevstratov@gmail.com</a> |
+				<a href="https://www.linkedin.com/in/boris-evstratov/" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+				<a href="https://github.com/borisevstratov" target="_blank" rel="noopener noreferrer">GitHub</a>
+			</p>
+
+			<!-- Work Experience -->
+			<h2 class="section-title">Experience</h2>
+
+			<div class="entry">
+				<h3>Co-founder & CTO</h3>
+				<h4><a href="https://www.anyset.ai/" target="_blank" rel="noopener noreferrer">Anyset AI</a></h4>
+				<p class="meta">Feb 2021 – Present · ConstructionTech SaaS</p>
+				<ul>
+					<li>Launched B2B SaaS platform for construction firms; acquired 10 pilot clients from ENR400</li>
+					<li>Raised pre-seed from Brick & Mortar Ventures</li>
+					<li>Led 5-engineer team, delivered MVP in under 6 months</li>
+					<li>Deployed AI/RAG features with Google Gemini, Vertex AI, OpenAI and LangChain</li>
+					<li>Connected Anyset platform with Autodesk Construction Cloud & Procore, reducing project management friction
+					<li>Tech: React, TypeScript, Node.js, PostgreSQL, Redis, Docker, Kubernetes, Google Cloud Platform</li>
+					</li>
+				</ul>
+			</div>
+
+			<div class="entry">
+				<h3>Fractional CTO / Full-Stack Developer</h3>
+				<h4>Freelance & Consulting Practice</h4>
+				<p class="meta">Jul 2016 – Jul 2025 · SaaS, FinTech, and e-Commerce products</p>
+				<ul>
+					<li>Designed and launched multiple SaaS and FinTech products from concept to production</li>
+					<li>Set up teams & processes for scaling from outsource to in-house development</li>
+					<li>End-to-end builds: architecture, development, deployment</li>
+					<li>CI/CD & DevOps with Docker, Ansible, GitHub Actions</li>
+					<li>Tech: React, Vue, Node.js, Python, Go, PHP, Ruby on Rails</li>
+				</ul>
+			</div>
+
+			<div class="entry">
+				<h3>System Analyst</h3>
+				<h4><a href="https://www.pochta.ru/" target="_blank" rel="noopener noreferrer">Russian Post</a></h4>
+				<p class="meta">Sep 2020 – Apr 2021 · Electronic Registered Letters</p>
+				<ul>
+					<li>Designed and shipped API integration with Russia’s Top-3 banks</li>
+					<li>Built and maintained project documentation website:
+						<a href="https://zakaznoe-partners.pochta.ru/docs">zakaznoe-partners.pochta.ru/docs</a>
+					</li>
+					<li>Tech: Java (Spring Boot), React, Kafka, Cassandra, PostgreSQL</li>
+				</ul>
+			</div>
+
+			<div class="entry">
+				<h3>Software Analyst, BIM Coordinator</h3>
+				<h4><a href="https://sinfo.tech/en/" target="_blank" rel="noopener noreferrer">S-INFO</a></h4>
+				<p class="meta">Oct 2017 – Aug 2019 · BIM Platform Department</p>
+				<ul>
+					<li>Directed development of S-INFO BIM platform (requirements, dev, QA, documentation, marketing)</li>
+					<li>Consulted international clients (Germany, Italy, Finland) on BIM adoption</li>
+					<li>Coordinated large federal BIM projects using Revit, Navisworks</li>
+					<li>Speaker at Autodesk University (2018) and InfraBIM Open (2019) on BIM workflow optimization and
+						interoperability</li>
+					<li>Tech: C#, ASP.NET Core, WPF, Unity, Unigine, Angular, PostgreSQL</li>
+					<li>Tools: Autodesk AutoCAD, Civil 3D, Revit, 3ds Max, InfraWorks, NavisWorks</li>
+				</ul>
+			</div>
+
+			<!-- Education -->
+			<h2 class="section-title">Education</h2>
+
+			<div class="entry">
+				<h3>Saint Petersburg State University Graduate School of Management</h3>
+				<p>Master’s degree, Business Analytics and Big Data</p>
+				<p class="meta">Sep 2018 – Jul 2020</p>
+			</div>
+
+			<div class="entry">
+				<h3>Audencia Business School</h3>
+				<p>Management of Digital Business and IT (Exchange semester)</p>
+				<p class="meta">Aug 2019 – Dec 2019</p>
+			</div>
+
+			<div class="entry">
+				<h3>St. Petersburg State Transport University</h3>
+				<p>Master’s degree, Bridge and Tunnel Design</p>
+				<p class="meta">Sep 2012 – Jul 2017</p>
+			</div>
+
+			<a class="spaced-before" href="/">← back to `index.html`</a>
+			<div id="time"><span id="time"></span></div>
+
+		</div>
+	</body>
+	<script src="script.js"></script>
+
+</html>
