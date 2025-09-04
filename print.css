@@ -1,0 +1,45 @@
+/* Print-specific styles */
+@media print {
+	@page {
+		size: A4;
+		margin-left: 1.25cm;
+		margin-right: 1.0cm;
+		margin-top: 1.0cm;
+		margin-bottom: 1.0cm;
+	}
+
+	body * {
+		visibility: hidden;
+		background: none !important;
+	}
+
+	a.spaced-before,
+	#time {
+		visibility: hidden;
+	}
+
+	.container,
+	.container * {
+		visibility: visible;
+	}
+
+	.container {
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		box-shadow: none;
+		border: none;
+	}
+
+	.entry {
+		padding-bottom: 0em !important;
+	}
+
+	.page-break-before {
+		page-break-before: always;
+	}
+
+	.no-print {
+		display: none !important;
+	}
+}

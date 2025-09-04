@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>bevstratov | cv</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="print.css" media="print">
+
 		<style>
 			h1 {
 				font-size: 28px;
@@ -21,8 +23,6 @@
 				border-bottom: 1px solid #ddd;
 				padding-bottom: 0.3em;
 			}
-
-
 
 			.entry {
 				margin-bottom: 1em;
@@ -67,32 +67,6 @@
 				position: absolute;
 				margin-left: -1em;
 			}
-
-			/* Print-specific styles */
-			@media print {
-				body * {
-					visibility: hidden;
-				}
-
-				a.spaced-before,
-				#time {
-					visibility: hidden;
-				}
-
-				.container,
-				.container * {
-					visibility: visible;
-				}
-
-				.container {
-					position: absolute;
-					left: 0;
-					top: 0;
-					width: 100%;
-					margin: 1cm;
-					padding: 0;
-				}
-			}
 		</style>
 	</head>
 
@@ -114,9 +88,22 @@
 				<h4><a href="https://www.anyset.ai/" target="_blank" rel="noopener noreferrer">Anyset AI</a></h4>
 				<p class="meta">Feb 2021 – Present · Construction SaaS</p>
 				<ul>
-					<li>Launched B2B SaaS platform for construction firms; acquired 10 pilot clients from ENR400</li>
-					<li>Raised pre-seed from Brick & Mortar Ventures</li>
-					<li>Led 5-engineer team, delivered MVP in under 6 months</li>
+					<li>Designed the core platform and launched three enterprise-grade B2B products used by ENR Top 400
+						Contractors
+					</li>
+					<ul>
+						<li><a href="https://www.airtasks.com/" target="_blank" rel="noopener noreferrer">Airtasks</a>: BIM/VDC
+							collaboration and project design coordination system</li>
+						<li><a href="http://anyset.ai/specs/" target="_blank" rel="noopener noreferrer">Specs</a>: AI-powered
+							specification management, submittal logs and deliverables tracking</li>
+						<li><a href="http://anyset.ai/closeout/" target="_blank" rel="noopener noreferrer">Closeout</a>: Automated
+							document collection,
+							subcontractor follow-ups, and turnover package creation</li>
+					</ul>
+					<li>Built and launched products from concept through production, securing VC funding after successful due
+						diligence.</li>
+					<li>Led and mentored a team of 5 engineers, defining technical roadmap and architecture, shipping heavy MVP in
+						under 6 months</li>
 					<li>Deployed AI/RAG features with Google Gemini, Vertex AI, OpenAI and LangChain</li>
 					<li>Connected Anyset platform with Autodesk Construction Cloud & Procore, reducing project management friction
 					<li>Tech: React, TypeScript, Node.js, PostgreSQL, Redis, Docker, Kubernetes, Google Cloud Platform</li>
@@ -125,14 +112,16 @@
 			</div>
 
 			<div class="entry">
-				<h3>Fractional CTO / Full-Stack Developer</h3>
+				<h3>Fractional CTO, Full-Stack Developer</h3>
 				<h4>Freelance & Consulting Practice</h4>
 				<p class="meta">Jul 2016 – Jul 2025 · SaaS, FinTech, E-commerce</p>
 				<ul>
-					<li>Designed and launched multiple SaaS and FinTech products from concept to production</li>
-					<li>Set up teams & processes for scaling from outsource to in-house development</li>
-					<li>End-to-end builds: architecture, development, deployment</li>
-					<li>CI/CD & DevOps with Docker, Ansible, GitHub Actions</li>
+					<li>Delivered end-to-end products from concept to production across SaaS, FinTech, e-Commerce, and Crypto
+						verticals</li>
+					<li>Built and led engineering teams, transitioning clients from outsourced to in-house development</li>
+					<li>Designed scalable architectures and CI/CD pipelines using Docker, Ansible, and GitHub Actions</li>
+					<li>Conducted technical audits, architecture evaluations, and product strategy for multiple startups</li>
+					<li>Integrated external systems, including payment gateways, analytics and other custom APIs</li>
 					<li>Tech: React, Vue, Node.js, Python, Go, PHP, Ruby on Rails</li>
 				</ul>
 			</div>
@@ -142,22 +131,25 @@
 				<h4><a href="https://www.pochta.ru/" target="_blank" rel="noopener noreferrer">Russian Post</a></h4>
 				<p class="meta">Sep 2020 – Apr 2021 · Electronic Registered Letters</p>
 				<ul>
-					<li>Designed and shipped API integration with Russia’s Top-3 banks</li>
-					<li>Built and maintained project documentation website:
-						<a href="https://zakaznoe-partners.pochta.ru/docs">zakaznoe-partners.pochta.ru/docs</a>
+					<li>Took ownership of delivery pipeline: built the full process from requirements gathering through production
+						rollout</li>
+					<li>Designed and shipped production API integrations with Russia’s Top-3 banks</li>
+					<li>Built and maintained <a href="https://zakaznoe-partners.pochta.ru/docs" target="_blank">project
+							documentation website</a>
 					</li>
+					<li>Implemented monitoring and observability with Prometheus and Grafana dashboards</li>
 					<li>Tech: Java (Spring Boot), React, Kafka, Cassandra, PostgreSQL</li>
 				</ul>
 			</div>
 
-			<div class="entry">
+			<div class="entry page-break-before">
 				<h3>Software Analyst, BIM Coordinator</h3>
 				<h4><a href="https://sinfo.tech/en/" target="_blank" rel="noopener noreferrer">S-INFO</a></h4>
 				<p class="meta">Oct 2017 – Aug 2019 · BIM/VDC Department</p>
 				<ul>
-					<li>Directed development of S-INFO BIM platform (requirements, dev, QA, documentation, marketing)</li>
-					<li>Consulted international clients (Germany, Italy, Finland) on BIM adoption</li>
-					<li>Coordinated large federal BIM projects using Revit, Navisworks</li>
+					<li>Directed development of S-INFO BIM platform (requirements, development, QA, documentation, marketing)</li>
+					<li>Consulted international clients (Germany, Italy, Finland) on the S-INFO platform adoption</li>
+					<li>Coordinated large federal BIM projects using Revit, Navisworks, leading a team of 5 designers</li>
 					<li>Speaker at Autodesk University (2018) and InfraBIM Open (2019) on BIM workflow optimization and
 						interoperability</li>
 					<li>Tech: C#, ASP.NET Core, WPF, Unity, Unigine, Angular, PostgreSQL</li>
@@ -169,20 +161,20 @@
 			<h2 class="section-title">Education</h2>
 
 			<div class="entry">
-				<h3>Saint Petersburg State University Graduate School of Management</h3>
-				<p>Master’s degree, Business Analytics and Big Data</p>
+				<h3>St. Petersburg State University Graduate School of Management</h3>
+				<h4>Master’s degree, Business Analytics and Big Data</h4>
 				<p class="meta">Sep 2018 – Jul 2020</p>
 			</div>
 
 			<div class="entry">
 				<h3>Audencia Business School</h3>
-				<p>Management of Digital Business and IT (Exchange semester)</p>
+				<h4>Exchange semester, Management of Digital Business and IT</h4>
 				<p class="meta">Aug 2019 – Dec 2019</p>
 			</div>
 
 			<div class="entry">
 				<h3>St. Petersburg State Transport University</h3>
-				<p>Master’s degree, Bridge and Tunnel Design</p>
+				<h4>Master’s degree, Bridge and Tunnel Design</h4>
 				<p class="meta">Sep 2012 – Jul 2017</p>
 			</div>
 
