@@ -158,10 +158,29 @@ ul li {
 }
 
 @media (max-width: 600px) {
-	.track-info {
-		display: none;
+	.sticky-player {
+		padding: 0 10px;
+		height: 60px;
+	}
+	.player-content {
+		flex-direction: row; /* Preserve desktop row layout */
+		gap: 10px;
+		width: 100%;
 	}
 	.controls {
-		width: 100%;
+		flex-grow: 1;
+		gap: 10px;
+		min-width: 0;
+	}
+	.track-info {
+		display: flex; /* Ensure visible */
+		flex-shrink: 0;
+		max-width: 40%;
+	}
+	.track-name {
+		font-size: 11px;
+	}
+	.artist-name {
+		font-size: 9px;
 	}
 }
