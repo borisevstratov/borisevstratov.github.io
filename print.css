@@ -13,8 +13,7 @@
 		background: none !important;
 	}
 
-	a.spaced-before,
-	#time {
+	a.spaced-before {
 		visibility: hidden;
 	}
 
