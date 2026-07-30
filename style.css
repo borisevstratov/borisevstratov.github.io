@@ -157,6 +157,26 @@ ul li {
 	font-size: 5rem;
 }
 
+#bouncing-dvd-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	pointer-events: none;
+	z-index: -1;
+	overflow: hidden;
+}
+
+.bouncing-dvd-logo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	will-change: transform;
+	opacity: 0.35;
+	transition: color 0.15s ease;
+}
+
 @media (max-width: 600px) {
 	.sticky-player {
 		padding: 0 10px;
