@@ -126,6 +126,18 @@ ul li {
 	transform: scale(1.1);
 }
 
+.legacy,
+.legacy a {
+	text-decoration: line-through;
+}
+
+.callout {
+	border-left: 3px solid currentColor;
+	padding: 8px 12px;
+	margin: 10px 0;
+	opacity: 0.85;
+}
+
 .dashed-underline {
 	text-decoration: underline dotted;
 	cursor: pointer;
